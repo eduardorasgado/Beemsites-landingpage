@@ -257,15 +257,6 @@ i.box-circle-solid{
 }
 .btn-theme{background-color:#35CBDF; color:#fff;}
 
-/*Video*/
-.video-setting{
-  position: absolute;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-
-}
-
 .head{
   position: relative;
   padding-bottom:2px;
@@ -295,6 +286,35 @@ i.box-circle-solid{
 .tecno {
   background-color: #59a5ed;
   color: white;
+}
+
+.tecno h4{
+  padding-top: 50px;
+  padding-left: 8vw;
+}
+
+.tecno-img{
+  background-image: url('../img/webdev.jpg')!important;
+  height: 35vw;
+  background-repeat: no-repeat;
+}
+
+.tecnologies {
+  padding-top: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Video*/
+.video-setting{
+  position: absolute;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
 }
 
 #videoheader{
