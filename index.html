@@ -14,7 +14,7 @@
 
       <!--video-->
 
-        <video class="video-sample visible" autoplay="" loop="" muted="">
+        <video class="video-sample visible" autoplay="" loop="" muted="" alt="">
           <source src="video/web-design.mp4" type="video/mp4">
         </video>
 
@@ -43,7 +43,7 @@
     		        <a class="nav-link" href="#">Clientes Satisfechos</a>
     		      </li>
     		      <li class="nav-item">
-    		        <a class="nav-link" href="#">Contáctanos</a>
+    		        <a class="nav-link" href="#contactanos">Contáctanos</a>
     		      </li>
     		    </ul>
     		  </div>
@@ -57,48 +57,51 @@
         <div class="col-md-6 low">
           <h1></h1>
           <h1>Tu agencia de software y soluciones tecnológicas a la medida</h1>
-          <a href="#"><button class="btn btn-primary" type="button" name="button">Contactar</button></a>
+          <a href="#contactanos"><button class="btn btn-primary" type="button" name="button">Contactar</button></a>
         </div>
       </div>
     </div>
   </header>
 
-    <section>
+    <section id="web">
           <!--Servicios web-->
           <!--Tecnologias web-->
-          <div class="container tecno">
-            <div class="row">
+          <div class="container">
+            <div class="row tecno">
               <div class="col-md-4 tecno-img">
+                <!--Inagen de tecno-->
               </div>
               <div class="col-md-8">
                 <h4>Desarrollo y Diseño Web</h4>
+                <br>
                 <p>Desarollamos y diseñamos la página web de tu empresa
                    o negocio siguiendo las tendencias más modernas y funcionales del desarrollo web.</p>
                    <p>Porque sabemos que lo que buscas son <strong>ventas</strong>.</p>
-                   <br>
-                   <h5>Tecnologías que usamos nuestro equipo:</h5>
-                   <br>
-                   <div class="row tecnologies">
-                      <div class="col-sm-2">
-                        <img src="img/html-5-logo.png" alt="">
-                      </div>
-                      <div class="col-sm-2">
-                        <img src="img/css-3.png" alt="">
-                      </div>
-                      <div class="col-sm-2">
-                        <img src="img/java-script.png" alt="">
-                      </div>
-                      <div class="col-sm-2">
-                        <img src="img/php-icon.png" alt="">
-                      </div>
-                      <div class="col-sm-2">
-                        <img src="img/mysql.png" alt="">
-                      </div>
-                      <div class="col-sm-2">
-                        <img src="img/linux-logo.png" alt="">
-                      </div>
-                   </div>
+                   <!--old tecnologies position-->
               </div>
+            </div>
+            <div class="row tecno2 tecnologies">
+              <h5>Nuestras Tecnologías Web</h5>
+            </div>
+            <div class="row tecno2 tecnologies">
+                   <div class="col-sm-2">
+                     <img src="img/html-5-logo.png" alt="">
+                   </div>
+                   <div class="col-sm-2">
+                     <img src="img/css-3.png" alt="">
+                   </div>
+                   <div class="col-sm-2">
+                     <img src="img/java-script.png" alt="">
+                   </div>
+                   <div class="col-sm-2">
+                     <img src="img/php-icon.png" alt="">
+                   </div>
+                   <div class="col-sm-2">
+                     <img src="img/mysql.png" alt="">
+                   </div>
+                   <div class="col-sm-2">
+                     <img src="img/linux-logo.png" alt="">
+                   </div>
             </div>
           </div>
     </section>
@@ -108,7 +111,7 @@
       <div id="servicios" class="container tecnicos">
         <div class="row">
           <div class="col-md-4">
-            <h2> <small>Servicios Técnicos</small></h2>
+            <h2> <small>Servicios 24/7</small></h2>
             <div class="jumbotron">
               <ul>
                 <li>
@@ -133,17 +136,25 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-1">
+
+          </div>
+          <div class="col-md-7">
+            <h2>Soporte Técnico</h2>
+            <br>
+            <br>
             <div class="row">
-              <h2>Soporte Técnico</h2>
               <div class="col-md-4">
-                Diagnóstico
+                <img src="img/stethoscope.png" alt="tool1">
+                <p>Diagnóstico</p>
               </div>
               <div class="col-md-4">
-                Preventivo
+                <img src="img/firewall.png" alt="tool2">
+                <p>Preventivo</p>
               </div>
               <div class="col-md-4">
-                Correctivo
+                <img src="img/wrench.png" alt="tool3">
+                <p>Correctivo</p>
               </div>
             </div>
           </div>
@@ -155,9 +166,65 @@
       Paquetes
     </section>
     Clientes Satisfechos
-    <footer>
-      Pie de pagina o footer
-    </footer>
+
+    <div id="contactanos" class="footer">
+      <!--Pie de pagina o footer-->
+	     <div class="footer1">
+    <div class="container-fluid">
+
+    	<div class="container ">
+    	<div class="row">
+    		<div class="col-sm-4">
+    		  <h2>Dónde estamos</h2><p>
+                               <div class="myframegmap">
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3826.5736069864547!2d-95.02509220711231!3d16.44646792658828!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1523350528096" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div></p><br>
+    		</div>
+    		<div class="col-sm-4">
+    			<h2>Inicio</h2>
+    			<p>
+    				<i class="fa fa-home"></i>    <a href="#"> Inicio</a><br>
+    				<i class="fa fa-user-o"></i>    <a href="#">Sobre Nosotros</a><br>
+    				<i class="fa fa-map-marker"></i>    <a href="#contactanos"> Contáctanos</a><br>
+    				<i class="fa fa-briefcase"></i>    <a href="#servicios"> Servicios</a><br>
+    				<i class="fa fa-question-circle"></i>    <a href="#"> Terminos & condiciones</a><br><br>
+
+
+    			</p>
+
+
+    		</div>
+    		<div class="col-sm-4 ">
+    			<h2>Contáctanos</h2>
+    			<p >
+
+    				<i class="fa fa-phone"></i>    <a href="tel:0123456789"> Número telefónico</a><br>
+    				<i class="fa fa-envelope"></i>    <a href="mailto:admon@beemsites.com"> admon@beemsites.com</a><br>
+    				<i class="fa fa-map-marker"></i>     Juchitán de Zaragoza, Oaxaca, México
+    			</p>
+
+    			<br>
+    		</div>
+    	</div>
+    		<div class="clear30"></div>
+    </div>
+    </div></div>
+
+
+    <div class="footer2">
+    	<div class="container-fluid">
+    	<div class="container">
+    		<div class="row">
+    			<div class="clear30"></div>
+    			<div class="col-sm-12 text-center"><p><strong>Todos los derechos reservados <img src="img/beemsites.png" alt="">&copy; 2018. Istmo de Tehuantepec, Oaxaca, México.</strong></p></div>
+    			<div class="clear30"></div>
+    		</div>
+
+    	</div>
+
+    </div>
+  </div>
+</div>
     <!-- Scripts -->
 
 
