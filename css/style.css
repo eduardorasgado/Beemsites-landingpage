@@ -303,6 +303,53 @@ i.box-circle-solid{
   padding-top: 10px;
 }
 
+.tecnicos .jumbotron {
+  background-color: #75b600;
+}
+
+/* ABOUT SECTION
+-------------------------------------------------- */
+.about-sec {
+	background: url('../img/switch.jpg') no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	position: relative;
+}
+.about-sec:before {
+	content: ' ';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(22,122,192,0.8);
+	top: 0;
+	left: 0
+}
+.about-sec h2 {
+	font-size: 55px;
+	font-weight: 800;
+	margin-top: 25%;
+}
+.about-sec h2 small {
+	display: block;
+	font-size: 24px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+.about-sec p {
+	font-size: 16px;
+
+}
+
+.about-sec ul li {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.action-sec{width:100%; float:left; background:#222}
+.action-box{float:left; width:100%; text-align:center;}
+.action-box h2{color:#fff; font-size:20px;}
+/*end about*/
+
 p {
   font-size: 1.2rem;
 	font-family: 'Source Sans Pro', sans-serif;
