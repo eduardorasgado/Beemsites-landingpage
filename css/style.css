@@ -1,0 +1,101 @@
+/*texto*/
+    #main_title {
+        font-weight: bold;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+
+    #main-phrase {
+        font-family: 'Playfair Display', serif;
+    }
+
+    #name_link {
+        color: green;
+        font-family: 'Oswald', sans-serif;
+    }
+    #name_navbar {
+        color: black;
+        font-family: 'Playfair Display', serif;
+    }
+    #h-name {
+        font-family: 'Playfair Display', serif;
+    }
+    .navbar {
+        background-color: transparent;
+        opacity: 0.9;
+    }
+
+    .jumbotron{
+        background-color: #ffeecc;
+    }
+
+    .card-text {
+        font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .text-muted {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .navbar-brand {
+        font-family: 'Oswald', sans-serif;
+    }
+    .nav-link {
+        font-family: 'Oswald', sans-serif;
+    }
+    h5 {
+        font-family: 'Playfair Display', serif;
+    }
+
+
+    /*Imagenes*/
+
+    .imgRedonda {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        border:5px solid #666;
+    }
+
+    /*Video*/
+    .video-setting{
+      position: absolute;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+
+    }
+    .txt{
+      position: relative;
+      padding-bottom:424px;
+      background-color: rgba(23, 20, 130, 0.5);
+
+    }
+
+  #videoheader .video-sample.visible {
+      opacity: 1;
+  }
+  #videoheader .video-sample {
+      z-index: 0;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-object-fit: cover;
+      -moz-object-fit: cover;
+      -ms-object-fit: cover;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -webkit-transition: opacity .7s linear;
+      -moz-transition: opacity .7s linear;
+      transition: opacity .7s linear;
+  }
+  @media screen and (max-width: 770px){
+
+
+    .visible {
+      opacity: 0;
+  }
+}
