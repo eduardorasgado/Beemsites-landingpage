@@ -303,8 +303,34 @@ i.box-circle-solid{
   padding-top: 10px;
 }
 
+.tecnologies .col-sm-2 img {
+  -webkit-transition:all .9s ease; /* Safari y Chrome */
+  -moz-transition:all .9s ease; /* Firefox */
+  -o-transition:all .9s ease; /* IE 9 */
+  -ms-transition:all .9s ease; /* Opera */
+}
+
+.tecnologies .col-sm-2 img:hover {
+  /*height: 7.5vw;*/
+  -webkit-transform:scale(1.25);
+-moz-transform:scale(1.25);
+-ms-transform:scale(1.25);
+-o-transform:scale(1.25);
+transform:scale(1.25);
+
+}
+
 .tecnicos .jumbotron {
   background-color: #75b600;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.tecnicos .jumbotron:hover {
+  background-color: #d52f5b;
+
 }
 
 /* ABOUT SECTION
