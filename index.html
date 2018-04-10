@@ -1,96 +1,121 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="es">
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Styles -->
-        <!--Google Fonts-->
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Oswald|Roboto|Playfair+Display" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="css/style.css">
-
     <!--Usando CSS de Bootstrap con CDN-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
 
+    <title>Beemsites | Agencia de Software</title>
+  </head>
+  <body>
+    <header class="container">
+    <section class="container" id="videoheader">
 
-</head>
-<body>
+      <!--video-->
 
-  <section id="videoheader" style="height: 16px;">
+        <video class="video-sample visible" autoplay="" loop="" muted="">
+          <source src="video/web-design.mp4" type="video/mp4">
+        </video>
 
+      <nav class="navbar navbar-expand-md fixed-top top-nav">
+    	<div class="container-fluid">
+    		  <a class="navbar-brand" href="#"><strong>Beemsites</strong></a>
+    		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		    <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+    		  </button>
 
-
-  <video class="video-sample visible" autoplay="" loop="" muted="">
-            <source src="video/web-design.mp4" type="video/mp4">
-          </video>
-
-    <div class="container-fluid txt">
-        <nav class="navbar navbar-expand-md fixed-top navbar-light  mb-4 rounded">
-           <div class="container">
-                <!-- Branding Image -->
-                <a class="navbar-brand" href="">
-                    Beemsites
-                </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!--Tener cuidado: si el menu burguer no funciona puede ser el id-->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-
-
-                <!-- Left Side Of Navbar -->
-                <ul class="navbar-nav mr-auto">
-                    &nbsp;
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">Inicio</a>
-                    </li>
-
-
-                        <li class="nav-item active">
-                            <a class="nav-link" href="">Blog</a>
-                        </li>
-                </ul>
-
-                <!-- Right Side Of Navbar -->
-
-                <!--Campo Search-->
-                <ul class="nav navbar-nav ml-auto">
-                    <!--el name query se lleva al backend para hacer las busquedas al action-->
-                    <form class="form-inline mt-2 mt-md-0 mr-2" action="/messages/search">
-                      <input class="form-control mr-sm-2" type="text" placeholder="Tecnologia" aria-label="Search" name="query" required>
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                    </form>
-                </ul>
-            </div>
-           </div>
-        </nav>
-
-
-                <div class="container flex-center">
-                    <!--aqui van letras-->
-                      <div class="text-center" id="main_jumbo" style="color: white;">
-                         <h1 id="main_title">Beemsites</h1>
-                         <h5>Agencia de software y soluciones tecnológicas</h5>
-                          <h4 id="main-phrase">Tu solución en un solo lugar</h4>
-                      </div>
-                  </div>
-    <br>
-
-            <!--video background-->
-</section>
-
-        <footer class="mt-4">
-            <div class="py-3 text-center">
-                <p class="text-muted">Beemsites. All Rights Reserved &copy;2018.</p>
-            </div>
-        </footer>
-
-    <!--div de container-->
+    		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    		    <ul class="navbar-nav ml-auto">
+    		      <li class="nav-item active">
+    		        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+    		      </li>
+    		      <li class="nav-item">
+    		        <a class="nav-link" href="#">Acerca de nosotros</a>
+    		      </li>
+    		      <li class="nav-item">
+    		        <a class="nav-link" href="#">Servicios</a>
+    		      </li>
+    		      <li class="nav-item">
+    		        <a class="nav-link" href="#">Paquetes</a>
+    		      </li>
+    		      <li class="nav-item">
+    		        <a class="nav-link" href="#">Clientes Satisfechos</a>
+    		      </li>
+    		      <li class="nav-item">
+    		        <a class="nav-link" href="#">Contáctanos</a>
+    		      </li>
+    		    </ul>
+    		  </div>
+    	</div>
+    </nav>
+    <div class="container head">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/beemsites4.png" alt="Beemsites">
+        </div>
+        <div class="col-md-6 low">
+          <h1></h1>
+          <h1>Tu agencia de software y soluciones tecnológicas a la medida</h1>
+          <a href="#"><button class="btn btn-primary" type="button" name="button">Contactar</button></a>
+        </div>
+      </div>
     </div>
+  </header>
 
+    <section>
+          <!--Servicios web-->
+          <!--Tecnologias web-->
+          <div class="container tecno">
+            <div class="row">
+              <div class="col-md-4 tecno-img">
+                c
+              </div>
+              <div class="col-md-8">
+                <h4>Desarrollo y Diseño Web</h4>
+                <p>Desarollamos y diseñamos la página web de tu empresa
+                   o negocio siguiendo las tendencias más modernas y funcionales del desarrollo web.</p>
+                   <p>Porque sabemos que lo que buscas son <strong>ventas</strong>.</p>
+                   <br>
+                   <h5>Tecnologías que usamos nuestro equipo:</h5>
+                   <br>
+                   <div class="row tecnologies">
+                      <div class="col-sm-2">
+                        <img src="img/html-5-logo.png" alt="">
+                      </div>
+                      <div class="col-sm-2">
+                        <img src="img/css-3.png" alt="">
+                      </div>
+                      <div class="col-sm-2">
+                        <img src="img/java-script.png" alt="">
+                      </div>
+                      <div class="col-sm-2">
+                        <img src="img/php-icon.png" alt="">
+                      </div>
+                      <div class="col-sm-2">
+                        <img src="img/mysql.png" alt="">
+                      </div>
+                      <div class="col-sm-2">
+                        <img src="img/linux-logo.png" alt="">
+                      </div>
+                   </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section>
+      Marketing
+    </section>
+    <section>
+      Servicios Técnicos
+    </section>
+    <section>
+      Paquetes
+    </section>
+    Clientes Satisfechos
+    <footer>
+      Pie de pagina o footer
+    </footer>
     <!-- Scripts -->
 
 
@@ -103,5 +128,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-</body>
+    <script src="js/beemsites.js" charset="utf-8"></script>
+  </body>
 </html>
