@@ -553,3 +553,27 @@ p {
 .footer2 img {
   height: 20px;
 }
+
+/*
+.mobileShow {
+	display:none;
+}
+
+Smartphone portrait and landscape
+@media only screen and (min-device-width : 320px) and (max-device-width:480px){
+	.mobileShow{
+		display: inline;
+	}
+}
+
+.mobileHide{
+display: inline;
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width: 480px) {
+	.mobileHide {
+		display: none;
+	}
+}
+
+*/
