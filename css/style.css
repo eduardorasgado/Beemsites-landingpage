@@ -324,6 +324,12 @@ i.box-circle-solid{
 
 }
 
+@media (min-width:320px) and (max-width: 500px) {
+	.tecno h4 {
+		font-size: 6vw;
+	}
+}
+
 .tecno-img{
   background-image: url('../img/webdev.jpg');
   height: 35vw;
@@ -342,6 +348,12 @@ i.box-circle-solid{
 	margin-top: 5%;
   padding-left: 15vw;
   color: white;
+}
+
+@media (min-width:320px) and (max-width: 500px) {
+	.tecno2 h5 {
+		font-size: 6vw;
+	}
 }
 
 .tecnologies {
@@ -363,6 +375,12 @@ i.box-circle-solid{
   -o-transform:scale(1.25);
   transform:scale(1.25);
 
+}
+
+@media (min-width:320px) and (max-width: 500px) {
+	.tecnologies .col-sm-2 img {
+		padding-top: 10px;
+	}
 }
 
 /* ABOUT SECTION
@@ -443,6 +461,25 @@ i.box-circle-solid{
   -ms-transform:scale(1.25);
   -o-transform:scale(1.25);
   transform:scale(1.25);
+}
+
+@media (min-width:320px) and (max-width: 500px) {
+	.tecnicos .col-md-7 img {
+		padding-left: 30vw;
+		width: 65%
+	}
+	.tecnicos .col-md-7 p {
+		padding-left: 25vw;
+	}
+
+	.tecnicos .col-md-7 img:hover {
+	  width: 70%;
+	  -webkit-transform:scale(1.25);
+	  -moz-transform:scale(1.25);
+	  -ms-transform:scale(1.25);
+	  -o-transform:scale(1.25);
+	  transform:scale(1.25);
+	}
 }
 
 p {
@@ -580,6 +617,6 @@ display: inline;
 	header {
 		/*background-color: #00073AFF;*/
 		background-image: url('../img/businessman.jpg');
-		
+
 	}
 }
