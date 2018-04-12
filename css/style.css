@@ -7,7 +7,18 @@ body, html{
 	height: 100%;
 	width:100%;
 }
+
 */
+/*PreLoader*/
+
+.hameid-loader-overlay {
+        width: 100%;
+        height: 100%;
+        background: url('../img/squares-load.gif') center no-repeat #FFF;
+        z-index: 99999;
+        position: fixed;
+}
+
 body{
 	font-size: 1rem;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -282,7 +293,6 @@ i.box-circle-solid{
 .head a {
   padding-left: 25vw;
 }
-
 .tecno {
   background-color: #59a5ed;
   color: white;
@@ -605,4 +615,50 @@ display: inline;
 		background-image: url('../img/businessman.jpg');
 
 	}
+}
+
+/*flecha animada*/
+
+header #videoheader .arrow-down {
+	padding-top: 10px;
+	padding-left: 35vw;
+}
+
+@media (max-width: 500px) {
+	header #videoheader .arrow-down {
+		padding-top: 70vw;
+	}
+}
+
+header #videoheader .arrow-down{
+	position: absolute;
+  bottom: 110px;
+  left: 50%;
+  margin-left: -10px;
+  width: 21px;
+  height: 29px;
+  background: url('../img/arrow-down.png') no-repeat center center;
+  display: block;
+  -webkit-animation: bounce-fade 1.2s infinite; /* Safari 4+ */
+  -moz-animation:    bounce-fade 1.2s infinite; /* Fx 5+ */
+  -o-animation:      bounce-fade 1.2s infinite; /* Opera 12+ */
+   animation:        bounce-fade 1.2s infinite; /* IE 10+ */
+}
+
+
+@-webkit-keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 70px; }
+    100% { opacity: 1; bottom: 35px; }
+}
+@-moz-keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 70px; }
+    100% { opacity: 1; bottom: 35px; }
+}
+@-o-keyframes bounce-fade {
+    0%   { opacity: 0; bottom:70px; }
+    100% { opacity: 1; bottom: 35px; }
+}
+@keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 70px; }
+    100% { opacity: 1; bottom: 35px; }
 }
