@@ -11,6 +11,7 @@ body, html{
 body{
 	font-size: 1rem;
 	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #f0f5f6;
 }
 
 /* ========== Universal Stylings ========== */
@@ -18,10 +19,79 @@ h1,h2,h3,h4,h5{
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
 }
+
+h2{
+  padding-top: 50px;
+  padding-left: 8vw;
+  font-size: 55px;
+	font-weight: 800;
+	margin-top: 10%;
+	color: white;
+
+}
+
+@media (max-width: 500px) {
+	h2 {
+		font-size: 6vw;
+		padding-left: 2vw;
+	}
+}
+
 h6{
 	position: relative;
 	text-transform: uppercase;
 }
+
+p {
+  font-size: 1.2rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/*Video*/
+.video-setting{
+  position: absolute;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+
+#videoheader{
+  height: 75vh;
+}
+
+#videoheader .video-sample.visible {
+  opacity: 1;
+}
+#videoheader .video-sample {
+  z-index: 0;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: opacity .7s linear;
+  -moz-transition: opacity .7s linear;
+  transition: opacity .7s linear;
+
+}
+@media screen and (max-width: 700px){
+
+
+.visible {
+  opacity: 0;
+	}
+}
+
+/*Botones*/
 .bg-primary{
 	background-color: #35CBDF!important;
 }
@@ -94,117 +164,6 @@ i.box-circle-solid{
     line-height: 55px;
     text-align: center;
     width: 55px;
-}
-.text-underline-white:before{
-	content:"";
-	position: absolute;
-	width:100px;
-	height: 4px;
-	left:50%;
-	margin-left:-50px;
-	background:#fff;
-	bottom: -15px;
-	border-radius: 10px;
-}
-.text-underline-rb-white:before{
-	content:"";
-	position: absolute;
-	width:100px;
-	height: 4px;
-	left:0;
-	background:#fff;
-	bottom: -15px;
-	border-radius: 10px;
-}
-.text-underline-primary:before{
-	content:"";
-	position: absolute;
-	width:50px;
-	height: 4px;
-	left:50%;
-	margin-left:-25px;
-	background:#35CBDF;
-	bottom: -15px;
-	border-radius: 10px;
-}
-.text-underline-rb-primary:before{
-	content:"";
-	position: absolute;
-	width:100px;
-	height: 4px;
-	left:0;
-	background:#35CBDF;
-	bottom: -15px;
-	border-radius: 10px;
-}
-.bg-overlay:before{
-	content:"";
-	background:rgba(0,0,0,0.7);
-	position: absolute;
-	height: 100%;
-	width:100%;
-	left:0;
-	top:0;
-	z-index: -1;
-}
-.bg-overlay-light:before{
-	content:"";
-	background:rgba(0,0,0,0.4);
-	position: absolute;
-	height: 100%;
-	width:100%;
-	left:0;
-	top:0;
-	z-index: -1;
-}
-.parallax{
-	background-attachment: fixed!important;
-}
-
-
-/* ========== Loader ========== */
-
-.loaders {
-	width: 100%;
-	box-sizing: border-box;
-	display: flex;
-	flex: 0 1 auto;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-.loaders .loader {
-	box-sizing: border-box;
-	display: flex;
-	flex: 0 1 auto;
-	flex-direction: column;
-	flex-grow: 1;
-	flex-shrink: 0;
-	flex-basis: 25%;
-	max-width: 25%;
-	height: 200px;
-	align-items: center;
-	justify-content: center;
-}
-.loader {
-	display: table;
-	height: 100%;
-	position: fixed;
-	width: 100%;
-	z-index: 1200;
-}
-.loader-bg {
-	background: #35CBDF;
-}
-.loader-inner {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-}
-
-.loader .ball-clip-rotate-pulse {
-    left: 50%;
-    position: absolute;
-    top: 50%;
 }
 
 /* ========== Top Navigation ========== */
@@ -292,18 +251,32 @@ i.box-circle-solid{
 .head img {
   width: 25vw;
 }
+/*Logo de beemsites*/
+@media (max-width: 700px) {
+	.head img {
+		padding-left: 20vw;
+		width: 42vw;
+	}
+}
 
 .head h1{
   color: white;
   font-size: 2.5vw;
+}
+@media (max-width: 700px) {
+	.head h1 {
+		font-size: 14px;
+	}
 }
 
 .low {
   padding-top: 50px;
 }
 
-.head h4 {
-  color: white;
+@media (max-width: 700px) {
+	.low {
+		padding-top: 12px;
+	}
 }
 
 .head a {
@@ -315,19 +288,8 @@ i.box-circle-solid{
   color: white;
 }
 
-.tecno h4{
-  padding-top: 50px;
-  padding-left: 8vw;
-  font-size: 55px;
-	font-weight: 800;
-	margin-top: 10%;
-
-}
-
-@media (min-width:320px) and (max-width: 500px) {
-	.tecno h4 {
-		font-size: 6vw;
-	}
+.tecno .ml-4 {
+	padding-left: 6vw;
 }
 
 .tecno-img{
@@ -336,23 +298,33 @@ i.box-circle-solid{
   background-repeat: no-repeat;
 }
 
+.tecno-img2{
+  background-color: #59a5ed
+}
+
+@media (max-width: 700px) {
+	.tecno-img{
+	  height: 65vh;
+	  background-repeat: no-repeat;
+	}
+}
+
 .tecno2 {
   background-color: rgb(255,82,82);
   padding-bottom: 5%;
   text-align: center;
 }
 
-.tecno2 h5 {
+.tecno2 h2 {
   font-size: 55px;
-	font-weight: 800;
 	margin-top: 5%;
-  padding-left: 15vw;
-  color: white;
+  padding-left: 14vw;
 }
 
-@media (min-width:320px) and (max-width: 500px) {
-	.tecno2 h5 {
-		font-size: 6vw;
+@media (max-width: 500px) {
+	.tecno2	h2 {
+			font-size: 6vw;
+			padding-left: 8vw;
 	}
 }
 
@@ -377,13 +349,74 @@ i.box-circle-solid{
 
 }
 
-@media (min-width:320px) and (max-width: 500px) {
+@media (max-width: 500px) {
 	.tecnologies .col-sm-2 img {
 		padding-top: 10px;
 	}
 }
 
-/* ABOUT SECTION
+/*Seccion de desarrollo de apps y software corporativo*/
+.software .business-man {
+	background-image: url('../img/beard-guy.jpg');
+  height: 35vw;
+  background-repeat: no-repeat;
+  background-size: 150%;
+}
+
+@media (max-width: 700px) {
+	.software .business-man {
+		background-image: url('../img/beard-guy.jpg');
+	  height: 35vw;
+	  background-repeat: no-repeat;
+	  background-size: 100%;
+	}
+}
+
+.software {
+	background-color: white;
+	background-image: url('../img/353.png');
+	background-size: 100%;
+	background-repeat: repeat;
+
+}
+
+@media (max-width: 700px) {
+	.software {
+		background-image: url('../img/app-pattern.png');
+		background-size: 150%;
+		padding-bottom: 80px;
+		background-repeat: repeat;
+	}
+}
+
+.bridge-software {
+		background-color: #ff8e31;
+		height: 50vh;
+}
+
+.bridge-software p {
+	padding-top: 50px;
+	color: white;
+	font-style: italic;
+}
+
+.software .pc-img img {
+	height: 550px;
+}
+
+@media (max-width: 700px) {
+
+	.software .pc-img img {
+		height: 60vw;
+	}
+
+	.bridge-software {
+		height: 100vh;
+	}
+}
+
+
+/* Seccion de Soporte tecnico
 -------------------------------------------------- */
 .about-sec {
 	background: url('../img/switch.jpg') no-repeat center center;
@@ -409,7 +442,7 @@ i.box-circle-solid{
 	display: block;
 	font-size: 24px;
 	margin-bottom: 15px;
-	padding-left: 10px;
+	padding-left: 4px;
 }
 .about-sec p {
 	font-size: 16px;
@@ -421,7 +454,6 @@ i.box-circle-solid{
   font-size: 1.2rem;
 }
 /*end about*/
-
 
 .tecnicos .jumbotron {
   background-color: #75b600;
@@ -463,7 +495,7 @@ i.box-circle-solid{
   transform:scale(1.25);
 }
 
-@media (min-width:320px) and (max-width: 500px) {
+@media (max-width: 500px) {
 	.tecnicos .col-md-7 img {
 		padding-left: 30vw;
 		width: 65%
@@ -482,53 +514,7 @@ i.box-circle-solid{
 	}
 }
 
-p {
-  font-size: 1.2rem;
-	font-family: 'Source Sans Pro', sans-serif;
-}
-
-/*Video*/
-.video-setting{
-  position: absolute;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-
-}
-
-#videoheader{
-  height: 75vh;
-}
-
-#videoheader .video-sample.visible {
-  opacity: 1;
-}
-#videoheader .video-sample {
-  z-index: 0;
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 70%;
-  -webkit-object-fit: cover;
-  -moz-object-fit: cover;
-  -ms-object-fit: cover;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -webkit-transition: opacity .7s linear;
-  -moz-transition: opacity .7s linear;
-  transition: opacity .7s linear;
-
-}
-@media screen and (max-width: 700px){
-
-
-.visible {
-  opacity: 0;
-}
-}
+/*Paquetes*/
 
 /**footer**/
 .footer1{
@@ -598,7 +584,7 @@ p {
 }
 
 /*Smartphone portrait and landscape*/
-@media only screen and (min-width : 320px) and (max-width:480px){
+@media (max-width:500px){
 	.mobileShow{
 		display: inline;
 
@@ -609,7 +595,7 @@ p {
 display: inline;
 }
 
-@media (min-width:320px) and (max-width: 500px) {
+@media (max-width: 500px) {
 	.mobileHide {
 		display: none;
 	}
