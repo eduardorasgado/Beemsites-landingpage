@@ -832,7 +832,14 @@ i.box-circle-solid{
 }
 
 #special-price p {
-	padding-left: 2vw
+	padding-left: 4vw;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  #special-price img {
+  	width: 40vw;
+  }
 }
 
 /**footer**/
