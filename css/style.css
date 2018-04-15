@@ -296,7 +296,7 @@ i.box-circle-solid{
   padding-left: 25vw;
 }
 .tecno {
-  background-color: #59a5ed;
+  background-color: #43ABEEFF;
   color: white;
 }
 
@@ -311,7 +311,7 @@ i.box-circle-solid{
 }
 
 .tecno-img2{
-  background-color: #59a5ed
+  background-color: #43ABEEFF;
 }
 
 @media (max-width: 700px) {
