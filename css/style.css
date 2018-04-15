@@ -849,7 +849,14 @@ i.box-circle-solid{
 }
 
 #customers img {
-  width: 200px;
+  width: 150px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+
+  filter: gray;
 }
 
 #customers #myBtn {
