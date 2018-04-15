@@ -819,22 +819,20 @@ i.box-circle-solid{
 
 #special-price {
 	background-color: rgb(255,82,82);
-	padding-bottom: 50px;
+	padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 #special-price a {
-	padding-left: 40vw
+	padding-left: 20vw
 }
 
 #special-price img {
 	width: 40vw;
 }
 
-#special-price .right-img {
-	width: 100vw;
-	padding-left: 50vw;
-	padding-top: 10vh;
-	position: absolute;
+#special-price p {
+	padding-left: 2vw
 }
 
 /**footer**/
