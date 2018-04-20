@@ -1063,3 +1063,49 @@ header #videoheader .arrow-down{
     0%   { opacity: 0; bottom: 70px; }
     100% { opacity: 1; bottom: 35px; }
 }
+
+/*Efectos*/
+@media (min-width: 700px) {
+  /*Transition delay*/
+  .transitions {
+      transition-duration: 1s;
+  }
+
+  .soft-man .translate-biz {
+    transform: translateX(-100px);
+    transition: 0s 180s;
+  }
+
+  .soft-man:hover .translate-biz {
+    transform: translateX(0px);
+    transition:.3s;
+  }
+
+  .bridge-software .translate {
+    transform: translateY(120px);
+    transition: 0s 180s;
+  }
+
+  .bridge-software:hover .translate{
+    transform: translateY(-20px);
+    transition:.3s;
+  }
+
+  .bridge-software .wording {
+    transform: translateX(-500px);
+    transition: 0s 180s;
+  }
+
+  .bridge-software:hover .wording {
+    transform: translateX(0px);
+    transition:.3s;
+  }
+
+  .tecnologies img {
+    transform: rotateY(0deg);
+  }
+
+  .tecnologies:hover img {
+    transform: rotateY(360deg);
+  }
+}
