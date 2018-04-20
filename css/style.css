@@ -408,6 +408,7 @@ i.box-circle-solid{
 	background-image: url('../img/353.png');
 	background-size: 100%;
 	background-repeat: repeat;
+  overflow: hidden;
 
 }
 
