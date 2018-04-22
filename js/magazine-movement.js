@@ -41,7 +41,7 @@ function loadApp() {
 
       // The number of pages
 
-      pages: 12,
+      pages: 7,
 
       // Events
 
