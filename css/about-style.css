@@ -1,0 +1,53 @@
+header {
+  background-image: url('../img/beemsites6.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+}
+
+.tecno-img{
+  background-image: url('../img/fixingguy.jpg');
+  height: 35vw;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 700px){
+  header {
+    height: 38vw;
+  }
+
+  .tecno-img{  
+    height: 0px;
+  }
+}
+
+
+.tecno2 h2 {
+  margin-top: 1%;
+}
+
+.tecno2 p {
+  color: white;
+}
+
+.about-sec {
+	background: url('../img/businessman.jpg') no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	position: relative;
+}
+
+#servicios .col-md-8 h2 {
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+
+#servicios .col-md-8 p {
+  font-size: 18px;
+  margin-bottom: 5%;
+}

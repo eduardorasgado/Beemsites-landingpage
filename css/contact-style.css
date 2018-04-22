@@ -1,0 +1,165 @@
+
+/* Contact */
+
+header {
+  background-image: url('../img/beemsites6.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+}
+
+.contact .content{
+  position:relative;
+  width:900px;
+  overflow:hidden;
+  margin: 60px auto 65px auto;
+}
+
+.contact h1{
+  font-size:34px;
+  color:black;
+  text-align:center;
+  margin-top:120px;
+  letter-spacing:6px;
+  font-weight:bold;
+  text-transform:uppercase;
+  line-height:1.2;
+}
+
+.contact hr{
+  color: black;
+  margin-top:30px;
+  background-color: black;
+  height: 1px;
+  width:106px;
+  border:0;
+}
+
+.contact .content .form{
+  width:455px;
+  overflow:hidden;
+  height:auto;
+  float:left;
+}
+
+.contact .content .form .column{
+  width:180px;
+  overflow:hidden;
+  height:auto;
+  float:left;
+  letter-spacing:1px;
+  margin-bottom:30px;
+}
+
+.contact .content .form .column-2{
+  width:210px;
+  padding-left:60px;
+  overflow:hidden;
+  height:auto;
+  float:left;
+  letter-spacing:1px;
+  margin-bottom:30px;
+}
+
+.contact .content .form .column-3{
+  width:450px;
+  overflow:hidden;
+  height:auto;
+  float:left;
+  letter-spacing:1px;
+}
+
+.contact .content .contact-text{
+  width:405px;
+  overflow:hidden;
+  height:auto;
+  font-weight:300;
+  float:left;
+  padding-left:40px;
+  color:white;
+  font-size:14px;
+  line-height:26px;
+}
+
+strong{
+  font-weight:700;
+
+}
+
+input{
+
+  width:180px;
+  height:40px;
+  background:#f8f7f7;
+  border-top:1px solid #333;
+  border-bottom:0;
+  border-left:0;
+  border-right:0;
+  color:#333;
+  font-weight:300;
+  line-height:40px;
+  padding-left:15px;
+  font-family: 'Lato', sans-serif;
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+input:focus{background:#f4f4f4;}
+
+textarea{
+
+  width:420px;
+  height:150px;
+  border-top:1px solid #333;
+  border-bottom:0;
+  line-height:20px;
+  border-left:0;
+  border-right:0;
+  background:#f8f7f7;
+  color:#333;
+  font-weight:300;
+  padding:15px 0 0 15px;
+  font-family: 'Lato', sans-serif;
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+textarea:focus{background:#f4f4f4;}
+
+@media (max-width: 700px){
+
+  #contact h2 {
+    font-size: 12vw;
+  }
+
+  .contact .content .form{
+    width:320px;
+  }
+
+  input{
+    width:300px;
+  }
+
+  textarea{
+    width:300px;
+  }
+
+  .contact .content .contact-text {
+    width:275px;
+  }
+
+  .contact .content .form .column, .contact .content .form .column-3{
+    width:350px;
+  }
+
+  .contact .content .form .column-2{
+    width:350px;
+    padding-left:0;
+  }
+
+}
