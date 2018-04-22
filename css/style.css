@@ -214,7 +214,7 @@ i.box-circle-solid{
 }
 .top-nav.light-header{
 	height: 60px;
-	background: #fff;
+	background: #011A31FF;
 	box-shadow: 0 0 10px rgba(0,0,0,0.23);
 	transition: 0.5s ease-in;
 	-webkit-transition: 0.5s ease-in;
@@ -224,7 +224,7 @@ i.box-circle-solid{
 	color: #212121;
 }
 .top-nav.light-header .navbar-nav li .nav-link {
-    color: #212121;
+    color: white;
     padding: 19px 15px;
     transition: 0.5s ease-in;
 	-webkit-transition: 0.5s ease-in;
@@ -258,6 +258,10 @@ i.box-circle-solid{
     }
 }
 .btn-theme{background-color:#35CBDF; color:#fff;}
+
+.navbar-brand img {
+	width: 10vw;
+}
 
 .head{
   position: relative;
@@ -518,13 +522,16 @@ i.box-circle-solid{
   -ms-transition:all .9s ease; /* Opera */
 }
 
-.tecnicos .col-md-7 img:hover {
-  width: 45%;
-  -webkit-transform:scale(1.25);
-  -moz-transform:scale(1.25);
-  -ms-transform:scale(1.25);
-  -o-transform:scale(1.25);
-  transform:scale(1.25);
+@media (min-width: 700px){
+
+	.tecnicos .col-md-7:hover img {
+	  width: 45%;
+	  -webkit-transform:scale(1.25);
+	  -moz-transform:scale(1.25);
+	  -ms-transform:scale(1.25);
+	  -o-transform:scale(1.25);
+	  transform:scale(1.25);
+	}
 }
 
 @media (max-width: 700px) {
@@ -564,6 +571,12 @@ i.box-circle-solid{
 	margin-top: 5%;
 }
 
+
+#packs .intermedio-logo {
+	width: 16vw;
+
+}
+
 @media (max-width: 700px) {
 	#packs {
 			/*background-color: white;*/
@@ -573,6 +586,21 @@ i.box-circle-solid{
 		  background-size: 120%;
 		  background-repeat: repeat;
 	}
+}
+
+@media (min-width: 700px) {
+	#packs .intermedio-logo {
+		width: 16vw;
+		transform: translateX(-1200px);
+		transition: 0s 180s;
+		transition-timing-function: ease;
+	}
+
+	#packs:hover .intermedio-logo {
+		transform: translateX(0px);
+		transition: .5s;
+
+	} 
 }
 
 .best-plan{
@@ -708,17 +736,20 @@ i.box-circle-solid{
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
-.p_plan_list > li:hover{
-    border-color: rgba(125,138,164,.1);
-	-webkit-border-radius: 5px;
-	        border-radius: 5px;
-    -webkit-box-shadow: 0 2px 4px rgba(125,138,164,.06);
-            box-shadow: 0 2px 4px rgba(125,138,164,.06);
-    position: relative;
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
-    z-index: 99;
+
+@media (min-width: 700px) {
+	.p_plan_list > li:hover{
+	    border-color: rgba(125,138,164,.1);
+		-webkit-border-radius: 5px;
+		        border-radius: 5px;
+	    -webkit-box-shadow: 0 2px 4px rgba(125,138,164,.06);
+	            box-shadow: 0 2px 4px rgba(125,138,164,.06);
+	    position: relative;
+	    -webkit-transform: scale(1.05);
+	        -ms-transform: scale(1.05);
+	            transform: scale(1.05);
+	    z-index: 99;
+	}
 }
 
 .p_plan_list > li .fa{
@@ -841,8 +872,7 @@ i.box-circle-solid{
 /*Special Prices*/
 
 #special-price {
-	background-color: rgb(255,82,82);
-	padding-bottom: 20px;
+  padding-bottom: 20px;
   padding-top: 20px;
   background: rgba(1,26,49,1);
   background: -moz-linear-gradient(top, rgba(1,26,49,1) 0%, rgba(33,180,226,1) 60%, rgba(183,222,237,1) 99%, rgba(183,222,237,1) 100%);
@@ -965,7 +995,7 @@ i.box-circle-solid{
 /*==========================footer2===========================*/
 .footer2{
 
-	background-color: rgb(255,82,82);
+	background-color: black;
 	color: white;
 
 }

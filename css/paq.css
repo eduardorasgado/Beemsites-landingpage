@@ -1,0 +1,17 @@
+header {
+  background-image: url('../img/beemsites5.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+}
+
+@media (min-width: 700px){
+	header {
+		height: 600px;
+	}
+}

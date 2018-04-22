@@ -1,0 +1,118 @@
+header {
+  background-image: url('../img/beemsites7.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+}
+
+@media (min-width: 700px){
+	header {
+		height: 67vh;
+	}
+}
+
+@media (max-width: 700px){
+  header {
+    height: 22vh;
+  }
+}
+
+.presentation {
+  padding: 50px 0 50px 0;
+  text-align: center;
+  background: url('../img/switch.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.presentation:before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(1,26,49,0.8);
+  top: 0;
+  left: 0
+}
+
+.presentation h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.catal {
+  height: 700px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.post-catal {
+  position: relative;
+}
+
+.flipbook-viewport{
+  overflow:hidden;
+  width:100%;
+  height:100%;
+}
+
+.flipbook-viewport .container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:auto;
+}
+
+.flipbook-viewport .flipbook{
+  width:922px;
+  height:600px;
+  left:-461px;
+  top:-300px;
+}
+
+.flipbook-viewport .page{
+  width:461px;
+  height:600px;
+  background-color:white;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+}
+
+.flipbook .page{
+  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
+  -moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+  -ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
+  -o-box-shadow:0 0 20px rgba(0,0,0,0.2);
+  box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.flipbook-viewport .page img{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin:0;
+}
+
+.flipbook-viewport .shadow{
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  -moz-transition: -moz-box-shadow 0.5s;
+  -o-transition: -webkit-box-shadow 0.5s;
+  -ms-transition: -ms-box-shadow 0.5s;
+
+  -webkit-box-shadow:0 0 20px #ccc;
+  -moz-box-shadow:0 0 20px #ccc;
+  -o-box-shadow:0 0 20px #ccc;
+  -ms-box-shadow:0 0 20px #ccc;
+  box-shadow:0 0 20px #ccc;
+}
