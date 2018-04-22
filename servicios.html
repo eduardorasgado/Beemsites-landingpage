@@ -71,16 +71,23 @@
   
 
   <div class="container-fluid catal">
-    <div class="flipbook-viewport">
-      <div class="container">
-        <div class="flipbook">
-          <div style="background-image:url(pages/1.jpg)"></div>
-          <div style="background-image:url(pages/2.jpg)"></div>
-          <div style="background-image:url(pages/3.jpg)"></div>
-          <div style="background-image:url(pages/4.jpg)"></div>
-          <div style="background-image:url(pages/5.jpg)"></div>
-          <div style="background-image:url(pages/6.jpg)"></div>
-          <div style="background-image:url(pages/7.jpg)"></div>
+    <div id="canvas">
+
+      <div class="zoom-icon zoom-icon-in"></div>
+
+      <div class="magazine-viewport">
+        <div class="container">
+          <div class="magazine">
+            <!-- Next button -->
+            <div ignore="1" class="next-button"></div>
+            <!-- Previous button -->
+            <div ignore="1" class="previous-button"></div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div id="slider-bar" class="turnjs-slider">
+            <div id="slider"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -90,6 +97,7 @@
   <a href="contactanos.html"><button class="btn btn-primary">Contactar Ya</button></a>
   </div>
   </section>
+
 
 
   <div id="contactanos" class="footer">
@@ -178,48 +186,13 @@
         <!--Para el catalogo-->
         <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
         <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+        <!--magazine-->
+        <script type="text/javascript" src="extras/jquery-ui-1.8.20.custom.min.js"></script>
+        <script type="text/javascript" src="lib/hash.js"></script>
+        
+        <!--magazine movement-->
+        <script type="text/javascript" src="js/magazine-movement.js"></script>
 
-        <script type="text/javascript">
-
-          function loadApp() {
-
-            // Create the flipbook
-
-            $('.flipbook').turn({
-                // Width
-
-                width:922,
-                
-                // Height
-
-                height:600,
-
-                // Elevation
-
-                elevation: 50,
-                
-                // Enable gradients
-
-                gradients: true,
-                
-                // Auto center this flipbook
-
-                autoCenter: true
-
-            });
-          }
-
-          // Load the HTML4 version if there's not CSS transform
-
-          yepnope({
-            test : Modernizr.csstransforms,
-            yep: ['lib/turn.js'],
-            nope: ['lib/turn.html4.min.js'],
-            both: ['css/basic.css'],
-            complete: loadApp
-          });
-
-        </script>
 
   </body>
 </html>
